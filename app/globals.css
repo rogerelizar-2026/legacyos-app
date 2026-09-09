@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TEMA CLÁSSICO (The Classic Estate) */
+.classic {
+  --bg-primary: #FDFBF7;
+  --text-primary: #292524;
+  --accent-primary: #B45309;
+  --accent-secondary: #166534;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+.classic body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+.classic h1, .classic h2, .classic h3 {
+  font-family: var(--font-heading);
+}
+
+/* TEMA NEON (The Neon Forge) */
+.neon {
+  --bg-primary: #09090B;
+  --text-primary: #FAFAFA;
+  --accent-primary: #06B6D4;
+  --accent-secondary: #D946EF;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+.neon body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+.neon h1, .neon h2, .neon h3 {
+  font-family: var(--font-heading);
+}
+
+.neon .mono {
+  font-family: var(--font-mono);
+}
